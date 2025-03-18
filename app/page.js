@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <div>
       <NavHome/>
-      <Services/>
-      <About/>
-      <ActiveSlider/>
-      <Footer/>
+      <div id="services"><Services/></div>
+      <div id="about"><About/></div>
+      <div id="slider"><ActiveSlider/></div>
+      <div id="footer"><Footer/></div>
     </div>
   );
 }

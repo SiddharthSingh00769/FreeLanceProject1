@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'sonner';
 
 export const ContactUs = () => {
   const form = useRef();
@@ -19,7 +20,7 @@ export const ContactUs = () => {
         },
         (error) => {
           console.log('FAILED...', error.text);
-          alert("Failed to send message. Please try again."); // Alert on failure
+          toast("Failed to send message. Please try again."); // Alert on failure
         },
       );
   };

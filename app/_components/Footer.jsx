@@ -2,6 +2,7 @@ import React from 'react';
 import { ContactUs } from './ContactUs';
 import { BsFacebook } from "react-icons/bs";
 import { LuInstagram } from "react-icons/lu";
+import { AiOutlineCopyrightCircle } from "react-icons/ai";
 
 function Footer() {
   return (
@@ -18,10 +19,10 @@ function Footer() {
       </div>
       <div className='flex flex-col justify-center items-center text-white'>
         <div className='flex justify-center items-center gap-4'>
-          <a href="#"><BsFacebook className='h-6 w-6'/></a>
-          <a href="#"><LuInstagram className='h-6 w-6'/></a> 
+          <a href="#"><BsFacebook className='h-6 w-6 hover:scale-125'/></a>
+          <a href="https://www.instagram.com/directdiverseinfo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><LuInstagram className='h-6 w-6 hover:scale-125'/></a> 
         </div>
-        <p className='text-sm lg:text-base mt-4'>Copyright 2025. All rights reserved.</p>
+        <p className='text-sm lg:text-base mt-4 flex justify-center items-center gap-1'><AiOutlineCopyrightCircle className='h-5 w-5'/>Copyright 2025. All rights reserved.</p>
       </div>
     </div>
   );

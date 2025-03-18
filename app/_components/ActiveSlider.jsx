@@ -11,14 +11,31 @@ import { FreeMode, Pagination } from "swiper/modules";
 
 import { RxArrowTopRight } from "react-icons/rx";
 import { ServiceData } from "../constants";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const ActiveSlider = () => {
+    useGSAP(() => {
+        gsap.from("#testimonial", {
+            scale: 0,
+            delay: 0,
+            duration: 0.75,
+            scrollTrigger: {
+                trigger: "#testimonial",
+                scroller: "body",
+                markers: false,
+                start: "top 98%",
+                end: "top 10%",
+            }
+        })
+      })
   return (
     <div className="h-auto xl:h-[100vh] w-full bg-blue-950 sm:overflow-hidden p-4">
         <div className="mt-7 text-center text-lg md:text-xl font-medium text-red-400">
             TESTIMONIALS
         </div>
-        <div className="mt-1 text-4xl md:text-4xl font-bold text-white text-center">Heartfelt, Open & Genuine</div>
+        <div id="testimonial" className="mt-1 text-4xl md:text-4xl font-bold text-white text-center">Heartfelt, Open & Genuine</div>
         <div className="flex items-center justify-center flex-col h-[400px] md:h-[650px] bg-blue-950">
         <Swiper
             breakpoints={{
