@@ -67,26 +67,12 @@ function Services() {
             start: "top 98%",
             end: "top 10%",
         }
-    }),
-    gsap.from("#medical", {
-        scale: 0,
-        opacity: 0,
-        y: "-120%",
-        delay: 0,
-        duration: 0.75,
-        scrollTrigger: {
-            trigger: "#webdev",
-            scroller: "body",
-            markers: false,
-            start: "top 98%",
-            end: "top 10%",
-        }
     })
   })
   return (
     <div className='h-auto xl:h-[100vh] w-full bg-blue-950 sm:overflow-hidden flex flex-col-reverse xl:flex-row'>
       <div className='w-full xl:w-[74%] p-4 grid grid-cols-1 lg:grid-cols-4 gap-4'>
-        <div id='webdev' className='min-h-[18rem] min-w-[12rem] bg-teal-500 rounded-xl lg:row-span-2 flex flex-col justify-center items-center p-4'>
+        <div id='webdev' className='min-h-[18rem] min-w-[12rem] bg-teal-500 rounded-xl row-span-1 lg:row-span-2 flex flex-col justify-center items-center p-4'>
             <div><FaComputer className='h-[4rem] w-[4rem]'/></div>
             <div className='text-2xl font-bold'>WEB DEVELOPMENT</div>
             <div className='text-base text-center px-4'>Imagine a modern online platform designed specifically for your business, where creativity meets functionality. Our goal is to bring your vision to life by creating an interface that captivates users and enhances their experience. With a focus on intuitive navigation and engaging features, we will ensure that every interaction is seamless and enjoyable. Let us collaborate to transform your ideas into a compelling digital reality that fosters engagement and drives success.</div>
@@ -101,15 +87,10 @@ function Services() {
             <div className='text-2xl font-bold'>IT RECRUITMENT</div>
             <div className='text-base text-center px-4'>Enhance your business by merging IT recruitment with digital marketing. We attract top talent and improve your online presence through SEO, PPC, and social media. Partner with us to unlock new growth opportunities.</div>
         </div>
-        <div id='digitalmarketing' className='min-h-[18rem] min-w-[12rem] bg-teal-500 rounded-xl flex flex-col justify-center items-center'>
+        <div id='digitalmarketing' className='min-h-[18rem] min-w-[12rem] bg-teal-500 rounded-xl flex flex-col justify-center items-center lg:col-span-2'>
             <div><SiAmazonsimpleemailservice className='h-[4rem] w-[4rem]'/></div>
             <div className='text-2xl font-bold'>DIGITAL MARKETING</div>
             <div className='text-base text-center px-4'>Transform your business with our digital solutions for sustainable growth. We streamline operations and boost customer engagement, ensuring your success. Partner with us for lasting profitability.</div>
-        </div>
-        <div id='medical' className='min-h-[18rem] min-w-[12rem] bg-teal-500 rounded-xl flex flex-col justify-center items-center'>
-            <div><FaHandHoldingMedical  className='h-[4rem] w-[4rem]'/></div>
-            <div className='text-2xl font-bold text-center'>AND MORE...</div>
-            <div className='text-base text-center px-4'></div>
         </div>
       </div>
       <div className='xl:w-[26%] p-4 flex flex-col justify-center'>
