@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import { FaPhoneAlt } from 'react-icons/fa';
+import { BsWhatsapp } from "react-icons/bs";
 import { CiMenuBurger } from 'react-icons/ci';
 import { IoCloseSharp } from 'react-icons/io5';
 
@@ -20,7 +20,7 @@ const NavHome = () => {
             <nav className='p-4 flex bg-white justify-between items-center'>
                 <a className='flex gap-2 items-center' href="#home" id='brand'>
                     <img className='object-cover w-16 h-16 lg:w-20 lg:h-20 xl:h-24 xl:w-24' src="ddi.jpg" alt="logo" />
-                    <span className='text-xl lg:text-xl font-semibold'>DIRECT DIVERSE INFO.TECH</span>
+                    <span className='text-xl lg:text-xl font-semibold'>DIRECT DIVERSE INFOTECH</span>
                 </a>
                 <div className={`hidden lg:flex lg:gap-4 xl:gap-8`} id='nav-menu'>
                     <a href="#home" className='lg:text-xl font-extrabold text-teal-500'>Home</a>
@@ -29,9 +29,9 @@ const NavHome = () => {
                     <a href="#slider" className='lg:text-xl font-medium transition-colors duration-200 ease-in-out hover:text-teal-500'>Testimonials</a>
                     <a href="#footer" className='lg:text-xl font-medium transition-colors duration-200 ease-in-out hover:text-teal-500'>Contact Us</a>
                 </div>
-                <button className='hidden md:flex items-center gap-1 p-4 border rounded-4xl bg-teal-500 text-white font-semibold cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-900'>
-                    <div><FaPhoneAlt /></div>
-                    <a href={'tel:+91-9305263665'}>+19294438299</a>
+                <button className='hidden md:flex items-center gap-2 p-4 border rounded-4xl bg-teal-500 text-white font-semibold cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-900'>
+                    <div><BsWhatsapp  className='h-5 w-5'/></div>
+                    <a href={'tel:+91-9277231954'}>+91-9277231954</a>
                 </button>
                 <button className='p-2 lg:hidden cursor-pointer' onClick={handleMenu}>
                     <CiMenuBurger className='text-gray-600 text-2xl'/>
