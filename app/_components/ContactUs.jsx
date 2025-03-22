@@ -35,9 +35,13 @@ export const ContactUs = () => {
         <label className='text-xl'>Email:</label>
         <input type="email" name="user_email" className='border border-white rounded-lg h-10 w-56 md:w-96 p-2' placeholder='Email' />
       </div>
+      <div className='flex items-center gap-3'>
+        <label className='text-xl'>Phone:</label>
+        <input type="text" name="user_number" className='border border-white rounded-lg h-10 w-56 md:w-96 p-2' placeholder='Phone no.' />
+      </div>
       <label className='text-xl'>Message:</label>
       <textarea name="message" className='border border-white rounded-lg h-20 w-[18rem] md:w-[28rem] p-2' placeholder='Enter your message...' />
-      <input type="submit" value="Send" className='mt-2 p-4 px-6 sm:px-8 lg:px-12 text-sm sm:text-lg lg:text-xl border rounded-4xl bg-teal-500 text-white font-semibold cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-900'/>
+      <input type="submit" value="Send" className='mt-2 p-3 px-6 sm:px-8 lg:px-12 text-sm sm:text-lg lg:text-xl border rounded-4xl bg-teal-500 text-white font-semibold cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-900'/>
     </form>
   );
 };
